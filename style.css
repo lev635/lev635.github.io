@@ -1,6 +1,27 @@
-.container {
+body {
+    background-color: #e5e5ff;
+}
+
+p {
+    margin: 10px;
+}
+
+.article {
+    background-color: #ffffff;
     margin: 20px auto;
-    max-width: 1200px;
-    padding: 10px;
-    }
-    
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .sns_icon{
+    margin: 10px;
+}
+
+.title {
+    text-align: center;
+}
