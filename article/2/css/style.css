@@ -1,0 +1,8 @@
+.article{
+    counter-reset: a;
+}
+
+h3::before {
+    counter-increment: hoge;
+    content: counter(hoge)". ";
+  }
