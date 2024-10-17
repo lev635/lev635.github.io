@@ -1,40 +1,81 @@
 body {
     background-color: #e5e5ff;
-    font-family: "游ゴシック","Yu Gothic";
+    font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+}
+
+hr {
+    margin: 20px 0px 20px 0px;
 }
 
 p {
     margin: 10px;
 }
 
-a#title{
+
+a#title {
     text-decoration: none;
     color: #000000;
+}
+
+
+
+code {
+    display: inline-block;
+    font-family:
+        Menlo,
+        Consolas,
+        "Hiragino Kaku Gothic ProN",
+        Meiryo,
+        monospace;
+    white-space: pre-line;
+    margin: 20px auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: #313131;
+    color: #ffffff
+}
+
+.url {
+    font-family:
+        Menlo,
+        Consolas,
+        "Hiragino Kaku Gothic ProN",
+        Meiryo,
+        monospace;
+    margin: 5px;
+    background-color: #ffe6e6;
+}
+
+
+header {
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 5px 50px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .article {
     background-color: #ffffff;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 800px;
     padding: 10px 50px;
     border-radius: 10px;
-}
-
-header {
-    background-color: #ffffff;
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 5px 50px;
-    border-radius: 10px;
-    text-align: center;
-
 }
 
 footer {
     text-align: center;
 }
 
-footer .sns_icon{
+footer .sns_icon {
     margin: 5px;
 }
 

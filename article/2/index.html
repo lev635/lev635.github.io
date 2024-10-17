@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" type=text/css href="../css/style.css" />
     <link rel="stylesheet" type=text/css href="css/style.css" />
-    <script src="../js/script.js"></script>
-    <script src="js/script.js"></script>
     <title>ゆかりの部屋</title>
 </head>
 
@@ -12,18 +11,67 @@
 
 <body>
     <div class="article">
-        <h1 class="title">Github Pagesでwebページを作成する方法</h1>
+        <h1 class="title">Github Pagesでwebページを作成</h1>
+        <p class="title">最終更新: <time id="last_modified"></time></p>
+        <hr>
         <h2>概要</h2>
-        <p>Github Pagesを用いて自分のサイトを作成するまでの手順をまとめた。</p>
+        <p>Github Pagesを用いて自分のwebページを作成するまでの手順をまとめた。</p>
         <h2>手順</h2>
-        <h3>リポジトリの作成</h3>
+        <h3 class="enum">リポジトリの作成</h3>
         <p>
-            
+            webページの中身を入れるリポジトリを作成する。リポジトリの名前は何でも良いが、これによりURLが決まる。
+            <a
+                href="https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site">公式サイト</a>
+            ではリポジトリの可視性を選択できるかのように書かれているが、執筆時点では無料プランの場合Publicしか選択できない点に注意。
         </p>
-        <p></p>
+        <p>
+            webサイトを作る際にはローカル環境でテストすることが多いだろうから、リポジトリをcloneしておく。
+        </p>
+        <h3 class="enum">webページの作成</h3>
+        <p>
+            公開したいwebページを作成し、mainブランチにpushする。webページはまだ出来ていないが動作を確認したいという場合は、
+            以下のような適当なHTMLファイルをpushしておく。ファイル名は<span class="url">index.html</span>としておく。
+        </p>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;test&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;test&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <h3 class="enum">Github Pagesの設定</h3>
+        <p>
+            先程作成したリポジトリにおいて<span class="url">settings/pages</span>を開く。
+            Build and deploymentの設定を変更する。Sourceの項を<span class="url">Deploy from a branch</span>に、
+            Branchの項を<span class="url">main</span>とする。
+        </p>
+        <p>
+            しばらく待つと "Your site is live at ..." と出る。リンクをクリックすると自分のページが表示される。
+        </p>
+        <h2>注意点</h2>
+        <h3>サイズ制限</h3>
+        <p>
+            Github Pagesではページのサイズは 1GB を超えてはならない。つまり、大きな画像を貼り付けるのは控えるべきだし、
+            HTMLやCSSの使いまわせる部分は積極的に使いまわすべきだということになる。
+        </p>
+        <h3>静的サイト</h3>
+        <p>
+            Github Pagesは静的サイトである。そのため、ユーザーに応じて表示するものを変更することなどは出来ない。
+        </p>
+        <h2>参考文献</h2>
+        <ul>
+            <li><a href="https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages">GitHub Pages について</a></li>
+        </ul>
     </div>
 </body>
 
 <div id="footer"></div>
+
+<script src="../js/script.js"></script>
+<script src="js/script.js"></script>
 
 </html>

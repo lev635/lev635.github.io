@@ -2,7 +2,7 @@
     counter-reset: a;
 }
 
-h3::before {
-    counter-increment: hoge;
-    content: counter(hoge)". ";
+h3.enum::before {
+    counter-increment: a;
+    content: counter(a)". ";
   }
