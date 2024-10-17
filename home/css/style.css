@@ -6,6 +6,7 @@ body {
         "Hiragino Sans",
         Meiryo,
         sans-serif;
+        width: 1920px;
 }
 
 hr {
@@ -22,8 +23,6 @@ a#title {
     color: #000000;
 }
 
-
-
 code {
     display: inline-block;
     font-family:
@@ -32,7 +31,6 @@ code {
         "Hiragino Kaku Gothic ProN",
         Meiryo,
         monospace;
-    white-space: pre-line;
     margin: 20px auto;
     width: 100%;
     box-sizing: border-box;
@@ -50,7 +48,8 @@ code {
         Meiryo,
         monospace;
     margin: 5px;
-    background-color: #ffe6e6;
+    background-color: #f0f0f0;
+    color: #5c1f99;
 }
 
 
