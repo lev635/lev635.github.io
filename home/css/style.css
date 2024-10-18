@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
     background-color: #e5e5ff;
     font-family: "Helvetica Neue",
@@ -6,7 +10,6 @@ body {
         "Hiragino Sans",
         Meiryo,
         sans-serif;
-        width: 1920px;
 }
 
 hr {
@@ -80,4 +83,13 @@ footer .sns_icon {
 
 .title {
     text-align: center;
+}
+
+.article {
+    counter-reset: a;
+}
+
+h3.enum::before {
+    counter-increment: a;
+    content: counter(a)". ";
 }
